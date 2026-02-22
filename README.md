@@ -1,6 +1,6 @@
 # 🩺 Kidney Stone Risk Predictor 
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](YOUR_STREAMLIT_LINK_HERE)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kidney-stone-predictor-sx7g2dqe9ff2anqzzndgw7.streamlit.app/)
 
 ## 📌 Project Overview
 This project applies Machine Learning to medical tabular data to predict the likelihood of kidney stone formation based on urine analysis. The goal is to provide a fast, interpretable, and accurate risk assessment tool.
@@ -10,11 +10,11 @@ Before modeling, the dataset was analyzed to understand the underlying biologica
 
 **1. Class Balance**
 The dataset is well-balanced, meaning synthetic oversampling (like SMOTE) was not required.
-class_balance.png 
+![Class Balance](class_balance.png)
 
 **2. Feature Correlation**
 The correlation heatmap revealed high multicollinearity (0.86) between `Specific Gravity` and `Osmolarity`. It also highlighted `Calcium` as the strongest individual predictor (0.54 correlation with the target).
-heatmap.png
+![Correlation Heatmap](heatmap.png)
 
 ## 🧠 Machine Learning Models
 Several models were trained and evaluated to find the best fit for this non-linear medical dataset:
@@ -27,7 +27,7 @@ Random Forest was selected as the final model because it matches the highest acc
 
 ## 🔍 Model Interpretability (Why it works)
 In medical AI, explainability is as important as accuracy. The Random Forest model's feature importance extraction perfectly aligns with biological facts: **Calcium concentration** is the overwhelming primary driver of kidney stone risk.
-feature_importance.png
+![Feature Importance](feature_importance.png)
 
 ## 🚀 Live Web Application
 The model is deployed as an interactive web application using Streamlit. Users can input real-time urine metrics to calculate the precise probability of stone formation.
