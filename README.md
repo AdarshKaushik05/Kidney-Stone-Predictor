@@ -10,11 +10,11 @@ Before modeling, the dataset was analyzed to understand the underlying biologica
 
 **1. Class Balance**
 The dataset is well-balanced, meaning synthetic oversampling (like SMOTE) was not required.
-![Class Balance](class_balance.png) 
+class_balance.png 
 
 **2. Feature Correlation**
 The correlation heatmap revealed high multicollinearity (0.86) between `Specific Gravity` and `Osmolarity`. It also highlighted `Calcium` as the strongest individual predictor (0.54 correlation with the target).
-![Correlation Heatmap](heatmap.png)
+heatmap.png
 
 ## 🧠 Machine Learning Models
 Several models were trained and evaluated to find the best fit for this non-linear medical dataset:
@@ -27,7 +27,7 @@ Random Forest was selected as the final model because it matches the highest acc
 
 ## 🔍 Model Interpretability (Why it works)
 In medical AI, explainability is as important as accuracy. The Random Forest model's feature importance extraction perfectly aligns with biological facts: **Calcium concentration** is the overwhelming primary driver of kidney stone risk.
-![Feature Importance](feature_importance.png)
+feature_importance.png
 
 ## 🚀 Live Web Application
 The model is deployed as an interactive web application using Streamlit. Users can input real-time urine metrics to calculate the precise probability of stone formation.
@@ -42,4 +42,4 @@ The model is deployed as an interactive web application using Streamlit. Users c
 * **Deployment:** Streamlit, Joblib
 
 ---
-*Developed by Adarsh Kauhik | B.Tech CSE (AI/ML) | KIIT University*
+*Developed by Adarsh Kaushik | B.Tech CSE (AI/ML) | KIIT University*
